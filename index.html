@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Systems | Custom Gaming PCs & Workstations</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#home" class="logo" id="btn-logo">
+        <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M7 8H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M7 12H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M7 16H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="17" cy="16" r="1" fill="currentColor"/>
+        </svg>
+        <span>AURA SYSTEMS</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active" data-tab="home">Home</a>
+        <a href="#configurator" class="nav-link" data-tab="configurator">Configurator</a>
+        <a href="#gallery" class="nav-link" data-tab="gallery">Gallery</a>
+        <a href="#support" class="nav-link" data-tab="support">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#checkout" class="cart-icon-btn nav-link" data-tab="checkout" aria-label="Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count">1</span>
+        </a>
+        <button class="user-profile-btn" aria-label="User Account">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+        <a href="#configurator" class="btn-primary-header nav-link" data-tab="configurator">Build Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+
+    <!-- HOME / HERO TAB -->
+    <section id="tab-home" class="tab-content active">
+      <div class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-container">
+          <div class="hero-text">
+            <span class="hero-tagline">CONCIERGE PC ARTISTRY</span>
+            <h1>ENGINEERED FOR ELITES</h1>
+            <p>Precision-engineered, liquid-cooled computer systems built for creators, gaming enthusiasts, and software developers. Hand-crafted in Silicon Valley with surgical cable routing, advanced stress testing, and lifetime professional support.</p>
+            <div class="hero-cta-buttons">
+              <a href="#configurator" class="btn-gold nav-link" data-tab="configurator">Configure Your Rig</a>
+              <a href="#gallery" class="btn-secondary nav-link" data-tab="gallery">Explore Work</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="pc-hero-card">
+              <div class="pc-aura-glow-pulse" id="hero-pc-glow"></div>
+              
+              <!-- Technical Running HUD on Hero PC image -->
+              <div class="pc-hero-hud">
+                <div class="hud-header">
+                  <span class="hud-title">AURA OS V1.04</span>
+                  <span class="hud-status online">ONLINE</span>
+                </div>
+                <div class="hud-body">
+                  <div class="hud-stat">
+                    <span class="hud-label">FLUID TEMP</span>
+                    <span class="hud-val" id="hero-hud-temp">32°C</span>
+                  </div>
+                  <div class="hud-stat">
+                    <span class="hud-label">SYS LOAD</span>
+                    <span class="hud-val" id="hero-hud-load">12%</span>
+                  </div>
+                </div>
+              </div>
+
+              <img src="assets/aura_vanguard_pc.png" alt="Aura Vanguard PC Showcase" class="hero-pc-image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Hero Features / Guarantees Overview -->
+      <div class="features-overview">
+        <div class="section-container">
+          <div class="features-grid">
+            <div class="feature-item-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3>3-Year Warranty</h3>
+              <p>Every system includes a comprehensive warranty, premium phone support, and return shipping covered.</p>
+            </div>
+            <div class="feature-item-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3>24-Hour Stress Testing</h3>
+              <p>Rigorous thermal profiling, RAM stability diagnostics, and benchmarks to guarantee stable peak performance.</p>
+            </div>
+            <div class="feature-item-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3>Bespoke Craftsmanship</h3>
+              <p>Impeccable cable routing, custom metal shrouds, and hand-bent hardline tubing crafted by expert engineers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIGURATOR TAB (Reworked into 3-column dashboard) -->
+    <section id="tab-configurator" class="tab-content">
+      <div class="configurator-container">
+        
+        <!-- COLUMN 1: Visualizer & Telemetry HUD Dashboard (Left) -->
+        <div class="config-visualizer-col">
+          <div class="visualizer-sticky-card">
+            <h2 class="config-title">AURA VANGUARD</h2>
+            
+            <div class="pc-visualizer-container">
+              <!-- Animated RGB Glow Overlay -->
+              <div class="pc-rgb-glow" id="configurator-rgb-glow"></div>
+              
+              <!-- Floating HUD directly on running image -->
+              <div class="pc-running-hud">
+                <span class="hud-pulse-dot" id="telemetry-pulse-dot"></span>
+                <span id="telemetry-status-text">SYS STAT: RUNNING</span>
+              </div>
+              
+              <img src="assets/aura_vanguard_pc.png" alt="Aura Vanguard Custom PC" class="config-pc-image">
+            </div>
+
+            <!-- Live Telemetry Dials Dashboard -->
+            <div class="telemetry-dashboard-card">
+              <div class="card-header-with-action">
+                <span class="widget-label">System Telemetry</span>
+                <button type="button" id="btn-run-benchmark" class="btn-benchmark-toggle" aria-label="Toggle Gaming Benchmark Simulation">
+                  <svg class="benchmark-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
+                  </svg>
+                  <span>Run Benchmark</span>
+                </button>
+              </div>
+              
+              <div class="telemetry-dials-grid">
+                <!-- CPU TEMP -->
+                <div class="telemetry-dial-box">
+                  <div class="dial-header">CPU TEMP</div>
+                  <div class="dial-value" id="telemetry-cpu-temp">38°C</div>
+                  <div class="dial-progress-bar">
+                    <div class="dial-progress-fill" id="fill-cpu-temp" style="width: 38%"></div>
+                  </div>
+                </div>
+                <!-- CPU LOAD -->
+                <div class="telemetry-dial-box">
+                  <div class="dial-header">CPU LOAD</div>
+                  <div class="dial-value" id="telemetry-cpu-load">8%</div>
+                  <div class="dial-progress-bar">
+                    <div class="dial-progress-fill" id="fill-cpu-load" style="width: 8%"></div>
+                  </div>
+                </div>
+                <!-- GPU TEMP -->
+                <div class="telemetry-dial-box">
+                  <div class="dial-header">GPU TEMP</div>
+                  <div class="dial-value" id="telemetry-gpu-temp">34°C</div>
+                  <div class="dial-progress-bar">
+                    <div class="dial-progress-fill" id="fill-gpu-temp" style="width: 34%"></div>
+                  </div>
+                </div>
+                <!-- GPU LOAD -->
+                <div class="telemetry-dial-box">
+                  <div class="dial-header">GPU LOAD</div>
+                  <div class="dial-value" id="telemetry-gpu-load">2%</div>
+                  <div class="dial-progress-bar">
+                    <div class="dial-progress-fill" id="fill-gpu-load" style="width: 2%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fan speed readouts -->
+              <div class="telemetry-fan-indicator">
+                <div class="fan-indicator-spinner" id="telemetry-fan-spinner">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="2" x2="12" y2="22"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                    <line x1="4.93" y1="19.07" x2="19.07" y2="4.93"></line>
+                  </svg>
+                </div>
+                <span>Active Cooling Fans: <strong id="telemetry-fan-speed">950 RPM</strong></span>
+              </div>
+            </div>
+
+            <!-- RGB Color Picker Widget -->
+            <div class="rgb-controller-widget">
+              <span class="widget-label">RGB Lighting Profile</span>
+              <div class="rgb-dots-list">
+                <button class="rgb-dot active" data-color="ice" style="background: linear-gradient(135deg, #7ad7f0, #e0f7fc);" aria-label="Ice Blue Theme"></button>
+                <button class="rgb-dot" data-color="gold" style="background: linear-gradient(135deg, #f5a623, #ffdd77);" aria-label="Aura Gold Theme"></button>
+                <button class="rgb-dot" data-color="crimson" style="background: linear-gradient(135deg, #e02020, #ff6666);" aria-label="Crimson Red Theme"></button>
+                <button class="rgb-dot" data-color="cyberpunk" style="background: linear-gradient(135deg, #00f0ff, #ff00ff);" aria-label="Cyberpunk Neon Theme"></button>
+                <button class="rgb-dot" data-color="emerald" style="background: linear-gradient(135deg, #2ecc71, #a3e4d7);" aria-label="Emerald Green Theme"></button>
+                <button class="rgb-dot" data-color="stealth" style="background: #222;" aria-label="Stealth Mode (Off)"></button>
+              </div>
+              <div class="rgb-active-name" id="rgb-theme-label">ICE BLUE</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 2: Scrollable Options Selector (Middle) -->
+        <div class="config-options-col">
+          <div class="configurator-tabs-header">
+            <button class="config-tab-btn active" data-config-cat="core">1. Core Components</button>
+            <button class="config-tab-btn" data-config-cat="performance">2. Performance</button>
+            <button class="config-tab-btn" data-config-cat="system">3. System & Styling</button>
+          </div>
+
+          <div class="configurator-category-views">
+            <!-- CORE COMPONENTS CATEGORY -->
+            <div class="category-view active" id="config-cat-core">
+              
+              <!-- CPU SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>Processor (CPU)</h3>
+                  <span class="selected-text-val" id="selected-cpu-val">Intel Core i9-14900K</span>
+                </div>
+                <div class="options-grid" data-category="cpu">
+                  <div class="option-card selected" data-id="cpu-i9" data-price="0" data-socket="LGA1700" data-name="Intel Core i9-14900K" data-desc="24 Cores (8P + 16E), LGA1700 Socket, 6.0 GHz">
+                    <div class="option-header">
+                      <h4>Intel Core i9-14900K</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">LGA1700 Socket. 24 Cores, 6.0 GHz Max Turbo. Ideal for extreme gaming & content rendering.</p>
+                  </div>
+                  <div class="option-card" data-id="cpu-i7" data-price="-200" data-socket="LGA1700" data-name="Intel Core i7-14700K" data-desc="20 Cores (8P + 12E), LGA1700 Socket, 5.6 GHz">
+                    <div class="option-header">
+                      <h4>Intel Core i7-14700K</h4>
+                      <span class="price-diff">-$200.00</span>
+                    </div>
+                    <p class="option-desc">LGA1700 Socket. 20 Cores, 5.6 GHz Max Turbo. Excellent gaming & multitasking performance.</p>
+                  </div>
+                  <div class="option-card" data-id="cpu-r9" data-price="50" data-socket="AM5" data-name="AMD Ryzen 9 7950X3D" data-desc="16 Cores, AM5 Socket, 3D V-Cache Technology">
+                    <div class="option-header">
+                      <h4>AMD Ryzen 9 7950X3D</h4>
+                      <span class="price-diff">+$50.00</span>
+                    </div>
+                    <p class="option-desc">AM5 Socket. 16 Cores, 3D V-Cache. High gaming speeds combined with heavy core compute power.</p>
+                  </div>
+                  <div class="option-card" data-id="cpu-r7" data-price="-150" data-socket="AM5" data-name="AMD Ryzen 7 7800X3D" data-desc="8 Cores, AM5 Socket, 3D V-Cache Technology">
+                    <div class="option-header">
+                      <h4>AMD Ryzen 7 7800X3D</h4>
+                      <span class="price-diff">-$150.00</span>
+                    </div>
+                    <p class="option-desc">AM5 Socket. 8 Cores, 3D V-Cache. Universally recognized as the fastest gaming CPU available.</p>
+                  </div>
+                  <div class="option-card budget-tag" data-id="cpu-r5-5500" data-price="-550" data-socket="AM4" data-name="AMD Ryzen 5 5500" data-desc="6 Cores, AM4 Socket, 4.2 GHz Max Boost">
+                    <div class="option-header">
+                      <h4>AMD Ryzen 5 5500 <span class="badge-budget">Budget</span></h4>
+                      <span class="price-diff">-$550.00</span>
+                    </div>
+                    <p class="option-desc">AM4 Socket. 6 Cores, 4.2 GHz Boost. Best-in-class budget gaming processor. Great 1080p value.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MOTHERBOARD SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>Motherboard</h3>
+                  <span class="selected-text-val" id="selected-motherboard-val">MSI MPG Z790 Carbon WiFi</span>
+                </div>
+                <div class="options-grid" data-category="motherboard">
+                  <div class="option-card selected" data-id="mobo-z790-carbon" data-price="100" data-socket="LGA1700" data-name="MSI MPG Z790 Carbon WiFi (LGA1700)" data-desc="Intel LGA1700 Socket, PCIe 5.0, Wi-Fi 6E, Heavy VRMs">
+                    <div class="option-header">
+                      <h4>MSI MPG Z790 Carbon WiFi</h4>
+                      <span class="price-diff">+$100.00</span>
+                    </div>
+                    <p class="option-desc">Socket LGA1700. Sleek carbon aesthetics, premium thermal solution, stable overclocking.</p>
+                  </div>
+                  <div class="option-card" data-id="mobo-z790-maximus" data-price="300" data-socket="LGA1700" data-name="ASUS ROG Maximus Z790 Hero (LGA1700)" data-desc="Intel LGA1700 Socket, Dual Thunderbolt 4, ROG Premium Audio">
+                    <div class="option-header">
+                      <h4>ASUS ROG Maximus Z790 Hero</h4>
+                      <span class="price-diff">+$300.00</span>
+                    </div>
+                    <p class="option-desc">Socket LGA1700. Extreme power stages, high-speed connectivity, customizable OLED dashboard.</p>
+                  </div>
+                  <div class="option-card" data-id="mobo-x670e-carbon" data-price="150" data-socket="AM5" data-name="MSI MPG X670E Carbon WiFi (AM5)" data-desc="AMD AM5 Socket, DDR5 Boost, Gen5 M.2 Slot, Lightning USB 20G">
+                    <div class="option-header">
+                      <h4>MSI MPG X670E Carbon WiFi</h4>
+                      <span class="price-diff">+$150.00</span>
+                    </div>
+                    <p class="option-desc">Socket AM5. Heavy VRM design, PCIe 5.0 support, next-gen Wi-Fi speed capability.</p>
+                  </div>
+                  <div class="option-card" data-id="mobo-x670e-crosshair" data-price="350" data-socket="AM5" data-name="ASUS ROG Crosshair X670E Hero (AM5)" data-desc="AMD AM5 Socket, Extreme USB4, ROG Water-Cooling Zone">
+                    <div class="option-header">
+                      <h4>ASUS ROG Crosshair X670E Hero</h4>
+                      <span class="price-diff">+$350.00</span>
+                    </div>
+                    <p class="option-desc">Socket AM5. Ultimate overclocking features, robust power delivery, premium build quality.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GPU SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>Graphics Card (GPU)</h3>
+                  <span class="selected-text-val" id="selected-gpu-val">NVIDIA RTX 4090 24GB</span>
+                </div>
+                <div class="options-grid" data-category="gpu">
+                  <div class="option-card selected" data-id="gpu-4090" data-price="1200" data-name="NVIDIA RTX 4090 24GB" data-desc="Ada Lovelace Architecture, 24GB GDDR6X VRAM">
+                    <div class="option-header">
+                      <h4>NVIDIA GeForce RTX 4090 24GB</h4>
+                      <span class="price-diff">+$1,200.00</span>
+                    </div>
+                    <p class="option-desc">The absolute peak of graphics performance. Unrivaled ray tracing and 4K power.</p>
+                  </div>
+                  <div class="option-card" data-id="gpu-4080s" data-price="400" data-name="NVIDIA RTX 4080 Super 16GB" data-desc="Ada Lovelace Architecture, 16GB GDDR6X VRAM">
+                    <div class="option-header">
+                      <h4>NVIDIA GeForce RTX 4080 Super 16GB</h4>
+                      <span class="price-diff">+$400.00</span>
+                    </div>
+                    <p class="option-desc">High framerate 4K gaming, advanced AI DLSS 3 frame generation capabilities.</p>
+                  </div>
+                  <div class="option-card" data-id="gpu-4070ts" data-price="0" data-name="NVIDIA RTX 4070 Ti Super 16GB" data-desc="Ada Lovelace Architecture, 16GB GDDR6X VRAM">
+                    <div class="option-header">
+                      <h4>NVIDIA GeForce RTX 4070 Ti Super 16GB</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">Smooth high-refresh 1440p and entry 4K gaming. Generous 16GB frame buffer.</p>
+                  </div>
+                  <div class="option-card" data-id="gpu-7900xtx" data-price="200" data-name="AMD Radeon RX 7900 XTX 24GB" data-desc="RDNA 3 Architecture, 24GB GDDR6 VRAM">
+                    <div class="option-header">
+                      <h4>AMD Radeon RX 7900 XTX 24GB</h4>
+                      <span class="price-diff">+$200.00</span>
+                    </div>
+                    <p class="option-desc">Massive 24GB VRAM with elite rasterization gaming speeds, AMD FSR 3 support.</p>
+                  </div>
+                  <div class="option-card budget-tag" data-id="gpu-3050" data-price="-800" data-name="NVIDIA GeForce RTX 3050 8GB" data-desc="Ampere Architecture, 8GB GDDR6 VRAM">
+                    <div class="option-header">
+                      <h4>NVIDIA RTX 3050 8GB <span class="badge-budget">Budget</span></h4>
+                      <span class="price-diff">-$800.00</span>
+                    </div>
+                    <p class="option-desc">Ampere Architecture, DLSS 2.0. Great 1080p gaming with ray tracing on a budget. Ideal entry point.</p>
+                  </div>
+                  <div class="option-card budget-tag" data-id="gpu-1650" data-price="-1050" data-name="NVIDIA GeForce GTX 1650 4GB" data-desc="Turing Architecture, 4GB GDDR6 VRAM">
+                    <div class="option-header">
+                      <h4>NVIDIA GTX 1650 4GB <span class="badge-budget">Budget</span></h4>
+                      <span class="price-diff">-$1,050.00</span>
+                    </div>
+                    <p class="option-desc">Turing Architecture. Excellent 1080p entry-level gaming. Compact, low power draw, no external power needed.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PERFORMANCE CATEGORY -->
+            <div class="category-view" id="config-cat-performance">
+              <!-- RAM SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>System Memory (RAM)</h3>
+                  <span class="selected-text-val" id="selected-ram-val">64GB DDR5 6000MHz</span>
+                </div>
+                <div class="options-grid" data-category="ram">
+                  <div class="option-card selected" data-id="ram-64" data-price="150" data-name="64GB DDR5 Dual Channel (6000MHz)" data-desc="High Speed, Low Latency CL30 Performance RAM">
+                    <div class="option-header">
+                      <h4>64GB DDR5 6000MHz (2x32GB)</h4>
+                      <span class="price-diff">+$150.00</span>
+                    </div>
+                    <p class="option-desc">Optimal capacity for power users, virtual environments, and future-proofing gaming specs.</p>
+                  </div>
+                  <div class="option-card" data-id="ram-32" data-price="0" data-name="32GB DDR5 Dual Channel (6000MHz)" data-desc="Standard Gaming & Multi-tasking Configuration">
+                    <div class="option-header">
+                      <h4>32GB DDR5 6000MHz (2x16GB)</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">The sweet spot for all modern high-refresh gaming titles and standard desktop multitasking.</p>
+                  </div>
+                  <div class="option-card" data-id="ram-96" data-price="350" data-name="96GB DDR5 High Capacity (5600MHz)" data-desc="Creator Grade High-Density Memory Module Layout">
+                    <div class="option-header">
+                      <h4>96GB DDR5 5600MHz (2x48GB)</h4>
+                      <span class="price-diff">+$350.00</span>
+                    </div>
+                    <p class="option-desc">Ideal for heavy video rendering workflows, 3D assets baking, and vast dataset processing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STORAGE SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>NVMe SSD Storage</h3>
+                  <span class="selected-text-val" id="selected-ssd-val">4TB NVMe M.2 SSD</span>
+                </div>
+                <div class="options-grid" data-category="ssd">
+                  <div class="option-card selected" data-id="ssd-4tb" data-price="200" data-name="4TB NVMe Gen4 M.2 SSD" data-desc="Speeds up to 7400MB/s Read, 6900MB/s Write">
+                    <div class="option-header">
+                      <h4>4TB NVMe PCIe Gen4 M.2 SSD</h4>
+                      <span class="price-diff">+$200.00</span>
+                    </div>
+                    <p class="option-desc">Elite speeds with vast storage. Never worry about game install limits again.</p>
+                  </div>
+                  <div class="option-card" data-id="ssd-2tb" data-price="0" data-name="2TB NVMe Gen4 M.2 SSD" data-desc="Speeds up to 7300MB/s Read, 6400MB/s Write">
+                    <div class="option-header">
+                      <h4>2TB NVMe PCIe Gen4 M.2 SSD</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">Ultrafast system boot-ups and load times. Excellent primary storage drive.</p>
+                  </div>
+                  <div class="option-card" data-id="ssd-8tb" data-price="550" data-name="8TB NVMe Gen4 M.2 SSD Dual Array" data-desc="High-density dual SSD layout configured in RAID 0/1">
+                    <div class="option-header">
+                      <h4>8TB NVMe PCIe Gen4 M.2 SSD (2x4TB)</h4>
+                      <span class="price-diff">+$550.00</span>
+                    </div>
+                    <p class="option-desc">Maximum capacity storage array. Combines double speed operations or data redundancy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SYSTEM & STYLING CATEGORY -->
+            <div class="category-view" id="config-cat-system">
+              <!-- LIQUID COOLING SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>Processor Cooling System</h3>
+                  <span class="selected-text-val" id="selected-cooler-val">Aura Liquid Elite 360mm LCD</span>
+                </div>
+                <div class="options-grid" data-category="cooler">
+                  <div class="option-card selected" data-id="cooler-liquid" data-price="120" data-name="Aura Liquid Elite 360mm LCD" data-desc="360mm radiator, custom IPS waterblock display">
+                    <div class="option-header">
+                      <h4>Aura Liquid Elite 360mm LCD</h4>
+                      <span class="price-diff">+$120.00</span>
+                    </div>
+                    <p class="option-desc">Elite AIO liquid cooler with customizable LCD panel, silent operations and RGB fans.</p>
+                  </div>
+                  <div class="option-card" data-id="cooler-air" data-price="0" data-name="Aura Air Premium Dual Tower" data-desc="Dual tower heatsink, 140mm silent PWM fans">
+                    <div class="option-header">
+                      <h4>Aura Air Premium Dual Tower</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">Ultra-durable, zero-risk dual tower heat-pipe air cooling. Whisper quiet acoustic profiles.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CASE SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>PC Case Architectural chassis</h3>
+                  <span class="selected-text-val" id="selected-case-val">Aura Vanguard Glass (Dual Chamber)</span>
+                </div>
+                <div class="options-grid" data-category="case">
+                  <div class="option-card selected" data-id="case-vanguard" data-price="100" data-name="Aura Vanguard Glass (Dual Chamber)" data-desc="Seamless dual tempered-glass wrap, luxury layout">
+                    <div class="option-header">
+                      <h4>Aura Vanguard Glass (Dual Chamber)</h4>
+                      <span class="price-diff">+$100.00</span>
+                    </div>
+                    <p class="option-desc">Panoramic view of internal hardware. Cable management tucked behind back motherboard tray.</p>
+                  </div>
+                  <div class="option-card" data-id="case-prism" data-price="0" data-name="Aura Prism Airflow (Mesh)" data-desc="High ventilation mesh panels, performance cooling layout">
+                    <div class="option-header">
+                      <h4>Aura Prism Airflow (Mesh)</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">Optimized cooling performance with full-coverage filtered mesh grilles on all sides.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- POWER SUPPLY SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>Power Supply Unit (PSU)</h3>
+                  <span class="selected-text-val" id="selected-psu-val">1200W PCIe 5.0 80+ Platinum</span>
+                </div>
+                <div class="options-grid" data-category="psu">
+                  <div class="option-card selected" data-id="psu-1200" data-price="80" data-name="1200W PCIe 5.0 80+ Platinum" data-desc="Fully modular, Japanese capacitors, ATX 3.0 ready">
+                    <div class="option-header">
+                      <h4>1200W ATX 3.0 80+ Platinum</h4>
+                      <span class="price-diff">+$80.00</span>
+                    </div>
+                    <p class="option-desc">Premium high wattage efficiency, direct native 12VHPWR GPU cable connections.</p>
+                  </div>
+                  <div class="option-card" data-id="psu-1000" data-price="0" data-name="1000W PCIe 5.0 80+ Gold" data-desc="Fully modular, ATX 3.0 ready, silent fans">
+                    <div class="option-header">
+                      <h4>1000W ATX 3.0 80+ Gold</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">Fully modular gold-certified power delivery, easily handles modern gaming loads.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLEEVED CABLES SELECTOR -->
+              <div class="selector-group">
+                <div class="group-header">
+                  <h3>Cable Mod Custom Sleeving</h3>
+                  <span class="selected-text-val" id="selected-cables-val">Ice Blue Accents Premium Kit</span>
+                </div>
+                <div class="options-grid" data-category="cables">
+                  <div class="option-card selected" data-id="cables-iceblue" data-price="40" data-name="Ice Blue Accents Premium Kit" data-desc="Metallic cyan and matte black braided cable sleeves">
+                    <div class="option-header">
+                      <h4>Ice Blue Accents Premium Kit</h4>
+                      <span class="price-diff">+$40.00</span>
+                    </div>
+                    <p class="option-desc">Complements the chassis styling with custom, individually braided cyan/black power sleeves.</p>
+                  </div>
+                  <div class="option-card" data-id="cables-black" data-price="0" data-name="Stealth Black Standard Sleeves" data-desc="Solid matte black cable sleeves, clean aesthetic">
+                    <div class="option-header">
+                      <h4>Stealth Black Custom Sleeves</h4>
+                      <span class="price-diff">Included</span>
+                    </div>
+                    <p class="option-desc">Clean, classic stealth appearance that keeps attention focused on RGB component elements.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 3: Persistent Summary Receipt Panel (Right - ALWAYS VISIBLE) -->
+        <div class="config-summary-col">
+          <div class="summary-sticky-card">
+            
+            <div class="sticky-receipt-header">
+              <h2>Build Summary</h2>
+              <!-- Socket compatibility badge -->
+              <div class="compatibility-status-badge" id="compatibility-badge"></div>
+            </div>
+            
+            <div class="compatibility-explanation-box" id="compatibility-explanation"></div>
+            
+            <!-- Specifications List (receipt-style) -->
+            <div class="config-specs-summary-receipt">
+              <ul class="specs-summary-list-receipt" id="specs-summary-list">
+                <!-- Javascript will inject specifications here -->
+              </ul>
+            </div>
+            
+            <!-- Price and Checkout CTA details -->
+            <div class="receipt-price-details">
+              <div class="receipt-cost-row">
+                <span>Base Rig Specs</span>
+                <span class="cost-val" id="receipt-base-price">$2,909.00</span>
+              </div>
+              <div class="receipt-cost-row">
+                <span>Upgrades Subtotal</span>
+                <span class="cost-val" id="receipt-upgrades-subtotal">$0.00</span>
+              </div>
+              
+              <div class="receipt-total-box">
+                <span class="total-label">Subtotal</span>
+                <span class="total-val" id="configurator-price">$0.00</span>
+              </div>
+              
+              <a href="#checkout" class="btn-config-checkout nav-link" id="btn-config-checkout" data-tab="checkout">
+                <span>PROCEED TO CHECKOUT</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              
+              <span class="cta-note">Includes 3-year warranty and free shipping</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY TAB -->
+    <section id="tab-gallery" class="tab-content">
+      <div class="gallery-container">
+        <div class="gallery-intro">
+          <span class="hero-tagline">BUILT BY CRAFTSMEN</span>
+          <h2>THE AURA SHOWCASE</h2>
+          <p>Explore a collection of masterworks shipped to clients. Every system is hand-crafted and ready to adapt to your style preferences.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Build Card 1 -->
+          <div class="gallery-card">
+            <div class="gallery-image-box">
+              <div class="gallery-overlay-glow"></div>
+              <img src="assets/aura_vanguard_pc.png" alt="Aura Vanguard Custom">
+              <span class="gallery-tag">Flagship</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Aura Vanguard - Custom</h3>
+              <p class="specs-summary">RTX 4090, Intel i9-14900K, Z790, 64GB DDR5, 4TB SSD</p>
+              <div class="gallery-card-footer">
+                <span class="gallery-price">$4,890.00</span>
+                <button class="btn-gallery-load" data-build-config="vanguard-custom">Load Config</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Build Card 2 -->
+          <div class="gallery-card">
+            <div class="gallery-image-box">
+              <div class="gallery-overlay-glow" style="background: radial-gradient(circle, rgba(0,240,255,0.15) 0%, transparent 70%);"></div>
+              <img src="assets/aura_vanguard_pc.png" alt="Aura Vanguard Silent" style="filter: hue-rotate(180deg);">
+              <span class="gallery-tag">Quiet Elite</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Aura Vanguard - Stealth</h3>
+              <p class="specs-summary">RTX 4070 Ti, Intel i7-14700K, Z790, 32GB DDR5, 2TB SSD</p>
+              <div class="gallery-card-footer">
+                <span class="gallery-price">$3,120.00</span>
+                <button class="btn-gallery-load" data-build-config="vanguard-stealth">Load Config</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Build Card 3 -->
+          <div class="gallery-card">
+            <div class="gallery-image-box">
+              <div class="gallery-overlay-glow" style="background: radial-gradient(circle, rgba(230,32,32,0.15) 0%, transparent 70%);"></div>
+              <img src="assets/aura_vanguard_pc.png" alt="Aura Vanguard R9" style="filter: hue-rotate(300deg);">
+              <span class="gallery-tag">Creator Workstation</span>
+            </div>
+            <div class="gallery-info">
+              <h3>Aura Vanguard - Apex</h3>
+              <p class="specs-summary">RTX 4090, AMD Ryzen 9 7950X3D, X670E, 96GB DDR5, 8TB SSD</p>
+              <div class="gallery-card-footer">
+                <span class="gallery-price">$5,640.00</span>
+                <button class="btn-gallery-load" data-build-config="vanguard-apex">Load Config</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT TAB -->
+    <section id="tab-support" class="tab-content">
+      <div class="support-container">
+        <!-- Elevated Support Hero -->
+        <div class="support-hero">
+          <span class="support-tagline">CONCIERGE SERVICE</span>
+          <h1>Elevated Support</h1>
+          <p>Direct access to our master builders. Whether you are planning a bespoke architectural rig or need technical guidance, our experts are at your disposal.</p>
+        </div>
+
+        <!-- Split Grid (Consultation & Details) -->
+        <div class="support-split-grid">
+          <!-- Left Details Panel -->
+          <div class="consultation-info-panel">
+            <h2>Expert Consultation</h2>
+            <p>Schedule a one-on-one session with an Aura Systems architect. We'll discuss your performance requirements, aesthetic preferences, and operational environment to craft a machine that transcends expectations.</p>
+
+            <div class="direct-line-card">
+              <div class="direct-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="direct-details">
+                <h4>Direct Line</h4>
+                <p>Response within 2 hours</p>
+                <a href="tel:15550000000" class="direct-link-anchor">+1 (555) 000-0000</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Consultation Form (Formspree Hook) -->
+          <div class="consultation-form-card">
+            <form id="consultation-form" action="https://formspree.io/f/xykqjnzl" method="POST" class="luxury-themed-form">
+              <!-- Hidden fields for Formspree routing -->
+              <input type="hidden" name="_subject" value="⚙️ Aura Systems — New Support Request">
+              <input type="hidden" name="_replyto" id="hidden-reply-to" value="">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="consult-name">FULL NAME</label>
+                  <input type="text" name="name" id="consult-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="consult-email">EMAIL ADDRESS</label>
+                  <input type="email" name="email" id="consult-email" placeholder="Enter your email" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="consult-type">INQUIRY TYPE</label>
+                <select name="inquiry-type" id="consult-type" required>
+                  <option value="" disabled selected>Select consultation type</option>
+                  <option value="new-build">New Build Consultation</option>
+                  <option value="warranty">Warranty Support Claim</option>
+                  <option value="upgrade">Upgrade / Retrofit Advice</option>
+                  <option value="modding">Custom Aesthetics / Water-loop Modding</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="consult-details">PROJECT DETAILS</label>
+                <textarea name="details" id="consult-details" rows="5" placeholder="Describe your vision or issue..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-consult">
+                <span>REQUEST SESSION</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Aura Guarantee Section -->
+        <div class="aura-guarantee-section">
+          <h2 class="guarantee-title">The Aura Guarantee</h2>
+          <p class="guarantee-subtitle">We don't just build hardware; we engineer relationships. Every Aura System comes fortified with an unparalleled support architecture.</p>
+
+          <div class="guarantee-grid">
+            <div class="guarantee-card main-guarantee-card">
+              <div class="guarantee-image-bg"></div>
+              <div class="guarantee-content">
+                <div class="guarantee-card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <h3>Lifetime Technical Support</h3>
+                <p>Our commitment doesn't end at delivery. You have direct access to our tier-3 technicians for the entire operational life of your machine. No scripts, just solutions.</p>
+              </div>
+            </div>
+
+            <div class="guarantee-right-col">
+              <div class="guarantee-card small-guarantee-card">
+                <div class="guarantee-card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="2">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  </svg>
+                </div>
+                <h3>White-Glove RMA</h3>
+                <p>Advanced replacement parts shipped overnight. We minimize downtime so your creativity remains uninterrupted.</p>
+              </div>
+
+              <div class="guarantee-card small-guarantee-card">
+                <div class="guarantee-card-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="2">
+                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                  </svg>
+                </div>
+                <h3>Upgrade Pathways</h3>
+                <p>Trade-in programs and consultation for generational hardware leaps, ensuring your system remains at the bleeding edge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <div class="faq-accordion-list">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <button class="faq-trigger">
+                <span>Do I need to know how to build a PC?</span>
+                <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-panel">
+                <div class="faq-content">
+                  <p>Not at all. Aura Systems designs and builds fully functional, plug-and-play custom solutions. Your system arrives with the operating system pre-installed, critical system drivers updated, and the bios optimized. Simply connect your power supply, peripherals, and display, and power on.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button class="faq-trigger">
+                <span>What is covered under the warranty?</span>
+                <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-panel">
+                <div class="faq-content">
+                  <p>Our standard warranty covers all internal components (CPU, GPU, Motherboard, Power Supply, Cooler, Storage, Memory) against electrical failures, liquid cooling leakages, and custom loop cosmetic oxidation for a full 3 years. We also cover all return packaging logistics and overnight shipping during the warranty servicing process.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button class="faq-trigger">
+                <span>How do I track my custom build progress?</span>
+                <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-panel">
+                <div class="faq-content">
+                  <p>Upon finalize build approval, you will receive access to your custom Client Portal page, which includes live camera feeds of the assembly bay while your system is constructed, realtime diagnostics feeds during our stress-testing sequences, and step-by-step progress status trackers updated hourly by your designated master builder.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKOUT TAB -->
+    <section id="tab-checkout" class="tab-content">
+      <div class="checkout-container">
+        <h1 class="checkout-page-title">Secure Checkout</h1>
+
+        <div class="checkout-split-layout">
+          <!-- Left Forms Column -->
+          <div class="checkout-forms-col">
+            <!-- Contact Info Card -->
+            <div class="checkout-card">
+              <div class="checkout-card-header">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <h2>Contact Information</h2>
+              </div>
+              <div class="checkout-card-body">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="checkout-firstname">FIRST NAME</label>
+                    <input type="text" id="checkout-firstname" placeholder="John" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout-lastname">LAST NAME</label>
+                    <input type="text" id="checkout-lastname" placeholder="Doe" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-email">EMAIL ADDRESS</label>
+                  <input type="email" id="checkout-email" placeholder="john.doe@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-phone">PHONE NUMBER</label>
+                  <input type="tel" id="checkout-phone" placeholder="+1 (555) 000-0000" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shipping Details Card -->
+            <div class="checkout-card">
+              <div class="checkout-card-header">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13" rx="2" ry="2"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+                <h2>Shipping Details</h2>
+              </div>
+              <div class="checkout-card-body">
+                <div class="form-group">
+                  <label for="checkout-address">STREET ADDRESS</label>
+                  <input type="text" id="checkout-address" placeholder="123 Performance Way" required>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="checkout-city">CITY</label>
+                    <input type="text" id="checkout-city" placeholder="Metropolis" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout-state">STATE / PROVINCE</label>
+                    <input type="text" id="checkout-state" placeholder="NY" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="checkout-zip">ZIP / POSTAL CODE</label>
+                    <input type="text" id="checkout-zip" placeholder="10001" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout-country">COUNTRY</label>
+                    <div class="custom-select-wrapper">
+                      <select id="checkout-country" required>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="DE">Germany</option>
+                        <option value="AU">Australia</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Order Summary Column -->
+          <div class="checkout-summary-col">
+            <div class="summary-sticky-card">
+              <h2>Order Summary</h2>
+
+              <div class="summary-product-item">
+                <div class="summary-pc-thumbnail">
+                  <div class="summary-thumbnail-glow" id="checkout-thumbnail-glow"></div>
+                  <img src="assets/aura_vanguard_pc.png" alt="Aura Vanguard Custom">
+                </div>
+                <div class="summary-product-info">
+                  <h3 id="checkout-item-title">Aura Vanguard - Custom</h3>
+                  <p class="summary-specs-list" id="checkout-item-specs">RTX 4090, i9-14900K, 64GB DDR5</p>
+                </div>
+              </div>
+
+              <!-- Cost breakdown list -->
+              <div class="cost-breakdown-list">
+                <div class="cost-row">
+                  <span>Subtotal</span>
+                  <span class="cost-val" id="summary-subtotal">$4,899.00</span>
+                </div>
+                <div class="cost-row">
+                  <span>Shipping (Insured)</span>
+                  <span class="cost-val">$150.00</span>
+                </div>
+                <div class="cost-row">
+                  <span>Taxes (Estimated 8%)</span>
+                  <span class="cost-val" id="summary-tax">$391.92</span>
+                </div>
+              </div>
+
+              <!-- Total box -->
+              <div class="total-cost-box">
+                <span class="total-label">Total</span>
+                <span class="total-val" id="summary-total">$5,049.00</span>
+              </div>
+
+              <!-- Finalize Build Button -->
+              <button type="button" class="btn-finalize-build" id="btn-finalize-build">
+                <span>FINALIZE BUILD</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="ssl-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>Secure SSL Encryption</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONSULTATION SUCCESS MODAL -->
+  <div class="modal-overlay" id="consult-modal">
+    <div class="success-modal-card">
+      <div class="success-icon-badge">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2>Request Submitted</h2>
+      <p>Your session request has been cataloged. An Aura System Builder will contact you via phone within 2 hours to confirm your time slot.</p>
+      <div class="ticket-code-box">
+        <span class="ticket-label">CONSULTATION TICKET</span>
+        <span class="ticket-val" id="consult-ticket-id">#AURA-CONS-9821</span>
+      </div>
+      
+      <!-- Live SMTP Email dispatch tracker log -->
+      <div class="smtp-log-console" id="smtp-log-console">
+        <!-- Javascript will inject logging details here -->
+      </div>
+      
+      <button class="btn-modal-close" id="btn-close-consult-modal">Close Window</button>
+    </div>
+  </div>
+
+  <!-- CHECKOUT SUCCESS MODAL -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="checkout-success-container">
+      <div class="success-header-badge">
+        <div class="checkmark-circle">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4ec2e0" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h1>Build Commissioned!</h1>
+        <p>Your custom system has been added to our queue. We've sent a detailed breakdown and invoice copy to your inbox.</p>
+      </div>
+
+      <div class="order-invoice-summary">
+        <div class="invoice-row">
+          <span class="inv-label">ORDER NUMBER</span>
+          <span class="inv-val" id="success-order-id">#AURA-98274</span>
+        </div>
+        <div class="invoice-row">
+          <span class="inv-label">SYSTEM TYPE</span>
+          <span class="inv-val" id="success-build-type">Aura Vanguard - Custom Rig</span>
+        </div>
+        <div class="invoice-row">
+          <span class="inv-label">COMMISSION PRICE</span>
+          <span class="inv-val" id="success-order-total">$5,049.00</span>
+        </div>
+      </div>
+
+      <!-- Build queue progress tracker -->
+      <div class="build-queue-tracker">
+        <h3>Queue Status & Build Stages</h3>
+        <div class="tracker-steps">
+          <div class="tracker-step completed">
+            <div class="step-dot">1</div>
+            <div class="step-info">
+              <h4>Order Placed</h4>
+              <p>Payment cleared & logs generated</p>
+            </div>
+          </div>
+          <div class="tracker-step active">
+            <div class="step-dot">2</div>
+            <div class="step-info">
+              <h4>Part Allocation</h4>
+              <p>Gathering selected silicon lots</p>
+            </div>
+          </div>
+          <div class="tracker-step">
+            <div class="step-dot">3</div>
+            <div class="step-info">
+              <h4>Chassis Hand-crafting</h4>
+              <p>Internal wiring, loop alignment</p>
+            </div>
+          </div>
+          <div class="tracker-step">
+            <div class="step-dot">4</div>
+            <div class="step-info">
+              <h4>Stress Testing</h4>
+              <p>24-hour thermal validation profiles</p>
+            </div>
+          </div>
+          <div class="tracker-step">
+            <div class="step-dot">5</div>
+            <div class="step-info">
+              <h4>Insured Shipping</h4>
+              <p>Double-boxed custom crate delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="success-actions">
+        <button class="btn-success-done" id="btn-close-checkout-modal">Return to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <a href="#home" class="logo">
+          <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M7 8h10M7 12h10M7 16h6"/>
+          </svg>
+          <span>AURA SYSTEMS</span>
+        </a>
+        <p class="copyright-notice">© 2026 AURA SYSTEMS. Engineered for elites. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <nav class="footer-nav">
+          <a href="#support" class="nav-link" data-tab="support">About Us</a>
+          <a href="#support" class="nav-link" data-tab="support">Privacy Policy</a>
+          <a href="#support" class="nav-link" data-tab="support">Terms of Service</a>
+        </nav>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Support</h4>
+        <nav class="footer-nav">
+          <a href="#support" class="nav-link" data-tab="support">Shipping Info</a>
+          <a href="#support" class="nav-link" data-tab="support">Warranty Details</a>
+          <a href="#support" class="nav-link" data-tab="support">Technical Specs</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script logic -->
+  <script src="app.js"></script>
+</body>
+</html>
